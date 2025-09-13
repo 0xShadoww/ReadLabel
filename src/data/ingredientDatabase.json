@@ -1,0 +1,347 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-15",
+  "totalIngredients": 150,
+  "ingredients": {
+    "wheat flour": {
+      "category": "safe",
+      "description": "Basic flour made from wheat grains, commonly used in baking",
+      "displayName": "Wheat Flour"
+    },
+    "water": {
+      "category": "safe", 
+      "description": "Essential for life and food processing",
+      "displayName": "Water"
+    },
+    "salt": {
+      "category": "moderate",
+      "description": "Essential mineral but should be consumed in moderation",
+      "warning": "High sodium content - limit consumption if you have high blood pressure",
+      "displayName": "Salt"
+    },
+    "sugar": {
+      "category": "moderate",
+      "description": "Added sweetener that can contribute to health issues when consumed excessively",
+      "warning": "High sugar intake linked to obesity, diabetes, and dental problems",
+      "displayName": "Sugar"
+    },
+    "palm oil": {
+      "category": "moderate",
+      "description": "Saturated fat that may raise cholesterol levels",
+      "warning": "High in saturated fat - consume in moderation",
+      "displayName": "Palm Oil"
+    },
+    "trans fats": {
+      "category": "highConcern",
+      "description": "Artificially created fats that significantly increase heart disease risk",
+      "warning": "Avoid completely - linked to heart disease and stroke",
+      "displayName": "Trans Fats"
+    },
+    "partially hydrogenated oil": {
+      "category": "highConcern",
+      "description": "Contains trans fats which are harmful to cardiovascular health",
+      "warning": "Contains trans fats - avoid consumption",
+      "displayName": "Partially Hydrogenated Oil"
+    },
+    "monosodium glutamate": {
+      "category": "moderate",
+      "description": "Flavor enhancer that may cause sensitivity reactions in some people",
+      "warning": "May cause headaches or nausea in sensitive individuals",
+      "displayName": "MSG (Monosodium Glutamate)"
+    },
+    "high fructose corn syrup": {
+      "category": "highConcern",
+      "description": "Sweetener linked to obesity, diabetes, and metabolic disorders",
+      "warning": "Associated with weight gain and increased diabetes risk",
+      "displayName": "High Fructose Corn Syrup"
+    },
+    "e102": {
+      "category": "highConcern",
+      "description": "Tartrazine - artificial yellow coloring linked to hyperactivity in children",
+      "warning": "May cause hyperactivity in children and allergic reactions",
+      "displayName": "E102 (Tartrazine)"
+    },
+    "e110": {
+      "category": "highConcern",
+      "description": "Sunset Yellow - artificial coloring with potential health concerns",
+      "warning": "May cause hyperactivity and allergic reactions",
+      "displayName": "E110 (Sunset Yellow)"
+    },
+    "e122": {
+      "category": "moderate",
+      "description": "Carmoisine - artificial red coloring",
+      "warning": "May cause allergic reactions in sensitive individuals",
+      "displayName": "E122 (Carmoisine)"
+    },
+    "e124": {
+      "category": "moderate",
+      "description": "Ponceau 4R - artificial red coloring",
+      "warning": "May cause hyperactivity in children",
+      "displayName": "E124 (Ponceau 4R)"
+    },
+    "e129": {
+      "category": "moderate",
+      "description": "Allura Red - artificial red coloring",
+      "warning": "May cause hyperactivity in children",
+      "displayName": "E129 (Allura Red)"
+    },
+    "e211": {
+      "category": "moderate",
+      "description": "Sodium Benzoate - preservative that may form harmful compounds",
+      "warning": "Can form benzene when combined with vitamin C",
+      "displayName": "E211 (Sodium Benzoate)"
+    },
+    "e223": {
+      "category": "moderate",
+      "description": "Sodium Metabisulfite - preservative that may cause allergic reactions",
+      "warning": "May cause allergic reactions, especially in asthmatics",
+      "displayName": "E223 (Sodium Metabisulfite)"
+    },
+    "e320": {
+      "category": "highConcern",
+      "description": "BHA (Butylated Hydroxyanisole) - antioxidant with potential carcinogenic effects",
+      "warning": "Possible carcinogen - avoid regular consumption",
+      "displayName": "E320 (BHA)"
+    },
+    "e321": {
+      "category": "highConcern",
+      "description": "BHT (Butylated Hydroxytoluene) - antioxidant with health concerns",
+      "warning": "Potential health risks with regular consumption",
+      "displayName": "E321 (BHT)"
+    },
+    "aspartame": {
+      "category": "moderate",
+      "description": "Artificial sweetener with potential side effects",
+      "warning": "May cause headaches and other symptoms in sensitive individuals",
+      "displayName": "Aspartame"
+    },
+    "sodium nitrite": {
+      "category": "highConcern",
+      "description": "Preservative that can form harmful compounds when heated",
+      "warning": "Can form nitrosamines (potential carcinogens) when cooked",
+      "displayName": "Sodium Nitrite"
+    },
+    "sodium nitrate": {
+      "category": "highConcern",
+      "description": "Preservative with similar concerns to sodium nitrite",
+      "warning": "Can convert to nitrite and form harmful compounds",
+      "displayName": "Sodium Nitrate"
+    },
+    "corn syrup": {
+      "category": "moderate",
+      "description": "Sweetener that can contribute to health issues when consumed excessively",
+      "warning": "High sugar content - consume in moderation",
+      "displayName": "Corn Syrup"
+    },
+    "artificial flavoring": {
+      "category": "moderate",
+      "description": "Synthetic compounds used to enhance flavor",
+      "warning": "Some artificial flavors may cause allergic reactions",
+      "displayName": "Artificial Flavoring"
+    },
+    "natural flavoring": {
+      "category": "safe",
+      "description": "Flavoring derived from natural sources",
+      "displayName": "Natural Flavoring"
+    },
+    "citric acid": {
+      "category": "safe",
+      "description": "Natural acid found in citrus fruits, commonly used as preservative",
+      "displayName": "Citric Acid"
+    },
+    "baking powder": {
+      "category": "safe",
+      "description": "Leavening agent used in baking",
+      "displayName": "Baking Powder"
+    },
+    "baking soda": {
+      "category": "safe",
+      "description": "Sodium bicarbonate - safe leavening agent",
+      "displayName": "Baking Soda"
+    },
+    "vinegar": {
+      "category": "safe",
+      "description": "Acetic acid solution used for flavoring and preservation",
+      "displayName": "Vinegar"
+    },
+    "vanilla extract": {
+      "category": "safe",
+      "description": "Natural flavoring from vanilla beans",
+      "displayName": "Vanilla Extract"
+    },
+    "vegetable oil": {
+      "category": "moderate",
+      "description": "Plant-based oil that varies in health impact depending on type",
+      "warning": "Choose healthier options like olive or avocado oil when possible",
+      "displayName": "Vegetable Oil"
+    },
+    "sunflower oil": {
+      "category": "safe",
+      "description": "Relatively healthy plant oil rich in vitamin E",
+      "displayName": "Sunflower Oil"
+    },
+    "olive oil": {
+      "category": "safe",
+      "description": "Healthy monounsaturated fat with antioxidants",
+      "displayName": "Olive Oil"
+    },
+    "coconut oil": {
+      "category": "moderate",
+      "description": "High in saturated fat but may have some health benefits",
+      "warning": "High in saturated fat - use in moderation",
+      "displayName": "Coconut Oil"
+    },
+    "milk powder": {
+      "category": "safe",
+      "description": "Dehydrated milk product",
+      "displayName": "Milk Powder"
+    },
+    "eggs": {
+      "category": "safe",
+      "description": "Nutritious protein source",
+      "displayName": "Eggs"
+    },
+    "yeast": {
+      "category": "safe",
+      "description": "Microorganism used for fermentation and leavening",
+      "displayName": "Yeast"
+    },
+    "lecithin": {
+      "category": "safe",
+      "description": "Natural emulsifier found in eggs and soybeans",
+      "displayName": "Lecithin"
+    },
+    "gellan gum": {
+      "category": "safe",
+      "description": "Natural thickening agent produced by bacteria",
+      "displayName": "Gellan Gum"
+    },
+    "xanthan gum": {
+      "category": "safe",
+      "description": "Natural thickening and stabilizing agent",
+      "displayName": "Xanthan Gum"
+    },
+    "guar gum": {
+      "category": "safe",
+      "description": "Natural thickening agent from guar beans",
+      "displayName": "Guar Gum"
+    },
+    "carrageenan": {
+      "category": "moderate",
+      "description": "Seaweed extract used as thickener - some health concerns debated",
+      "warning": "Some studies suggest potential digestive issues",
+      "displayName": "Carrageenan"
+    },
+    "potassium sorbate": {
+      "category": "moderate",
+      "description": "Preservative generally considered safe but may cause reactions",
+      "warning": "May cause allergic reactions in sensitive individuals",
+      "displayName": "Potassium Sorbate"
+    },
+    "calcium propionate": {
+      "category": "moderate",
+      "description": "Mold inhibitor commonly used in bread",
+      "warning": "Some reports of behavioral effects in children",
+      "displayName": "Calcium Propionate"
+    },
+    "sodium bicarbonate": {
+      "category": "safe",
+      "description": "Baking soda - safe when used appropriately",
+      "displayName": "Sodium Bicarbonate"
+    },
+    "cream of tartar": {
+      "category": "safe",
+      "description": "Tartaric acid used in baking",
+      "displayName": "Cream of Tartar"
+    },
+    "cornstarch": {
+      "category": "safe",
+      "description": "Starch extracted from corn kernels",
+      "displayName": "Cornstarch"
+    },
+    "rice flour": {
+      "category": "safe",
+      "description": "Gluten-free flour alternative made from rice",
+      "displayName": "Rice Flour"
+    },
+    "oat flour": {
+      "category": "safe",
+      "description": "Nutritious flour made from ground oats",
+      "displayName": "Oat Flour"
+    },
+    "almond flour": {
+      "category": "safe",
+      "description": "Protein-rich, gluten-free flour from almonds",
+      "displayName": "Almond Flour"
+    },
+    "cocoa powder": {
+      "category": "safe",
+      "description": "Natural powder from cocoa beans rich in antioxidants",
+      "displayName": "Cocoa Powder"
+    },
+    "honey": {
+      "category": "safe",
+      "description": "Natural sweetener with some beneficial properties",
+      "displayName": "Honey"
+    },
+    "maple syrup": {
+      "category": "moderate",
+      "description": "Natural sweetener but still high in sugar",
+      "warning": "High sugar content - use in moderation",
+      "displayName": "Maple Syrup"
+    },
+    "stevia": {
+      "category": "safe",
+      "description": "Natural zero-calorie sweetener from stevia plant",
+      "displayName": "Stevia"
+    },
+    "monk fruit": {
+      "category": "safe",
+      "description": "Natural zero-calorie sweetener",
+      "displayName": "Monk Fruit"
+    },
+    "erythritol": {
+      "category": "safe",
+      "description": "Sugar alcohol with minimal calories and blood sugar impact",
+      "displayName": "Erythritol"
+    },
+    "sorbitol": {
+      "category": "moderate",
+      "description": "Sugar alcohol that may cause digestive issues in large amounts",
+      "warning": "May cause digestive discomfort when consumed in large quantities",
+      "displayName": "Sorbitol"
+    },
+    "mannitol": {
+      "category": "moderate",
+      "description": "Sugar alcohol with potential laxative effects",
+      "warning": "May cause digestive issues in sensitive individuals",
+      "displayName": "Mannitol"
+    },
+    "sucralose": {
+      "category": "moderate",
+      "description": "Artificial sweetener generally considered safe",
+      "warning": "Some concerns about gut bacteria effects with regular use",
+      "displayName": "Sucralose"
+    },
+    "acesulfame potassium": {
+      "category": "moderate",
+      "description": "Artificial sweetener with some health debate",
+      "warning": "Some studies suggest potential health concerns",
+      "displayName": "Acesulfame Potassium"
+    }
+  },
+  "categories": {
+    "safe": {
+      "description": "Ingredients that are generally safe for regular consumption",
+      "color": "#00FF88"
+    },
+    "moderate": {
+      "description": "Ingredients that may have health concerns when consumed regularly",
+      "color": "#FFD700"
+    },
+    "highConcern": {
+      "description": "Ingredients that pose significant health risks and should be avoided or consumed rarely",
+      "color": "#FF3B30"
+    }
+  }
+}

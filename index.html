@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#92140C" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ReadLabel" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="AI-powered food ingredient analyzer. Scan labels, get health insights instantly." />
+    <meta name="keywords" content="food, health, ingredients, AI, scanner, nutrition" />
+    <meta name="author" content="ReadLabel Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ReadLabel - AI Food Ingredient Analyzer" />
+    <meta property="og:description" content="Scan food labels and get instant health risk analysis powered by AI" />
+    <meta property="og:image" content="/icons/icon-512.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="ReadLabel - AI Food Ingredient Analyzer" />
+    <meta property="twitter:description" content="Scan food labels and get instant health risk analysis powered by AI" />
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="mask-icon" href="/icons/mask-icon.svg" color="#92140C" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>ReadLabel - AI Food Ingredient Analyzer</title>
+  </head>
+  <body class="bg-dark-900 text-primary-50 font-sans antialiased">
+    <div id="root"></div>
+    
+    <!-- PWA Install Prompt -->
+    <div id="install-prompt" class="hidden fixed bottom-4 left-4 right-4 bg-primary-900 text-primary-50 p-4 rounded-xl shadow-strong z-50">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="font-semibold">Install ReadLabel</h3>
+          <p class="text-sm opacity-90">Add to home screen for better experience</p>
+        </div>
+        <div class="flex gap-2">
+          <button id="install-dismiss" class="px-3 py-1 text-sm opacity-70 hover:opacity-100">
+            Later
+          </button>
+          <button id="install-accept" class="px-4 py-1 bg-primary-50 text-primary-900 rounded-lg text-sm font-medium">
+            Install
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
