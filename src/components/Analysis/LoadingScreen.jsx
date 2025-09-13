@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, memo, useCallback, useMemo } from 'react'
 import { useOCR } from '../../hooks/useOCR'
 import { useAnalysis } from '../../hooks/useAnalysis'
 
-const LoadingScreen = ({ image, onAnalysisComplete, onAnalysisError, onBack }) => {
+const LoadingScreen = memo(({ image, onAnalysisComplete, onAnalysisError, onBack }) => {
   const [stage, setStage] = useState('processing')
   const [progress, setProgress] = useState(0)
   const [extractedText, setExtractedText] = useState('')
@@ -38,7 +38,7 @@ const LoadingScreen = ({ image, onAnalysisComplete, onAnalysisError, onBack }) =
     return () => window.removeEventListener('ocrProgress', handleOCRProgress)
   }, [image, stage])
 
-  const processImage = async () => {
+  const processImage = useCallback(async () => {
     try {
       // Stage 1: OCR Processing
       setStage('ocr')
@@ -71,9 +71,9 @@ const LoadingScreen = ({ image, onAnalysisComplete, onAnalysisError, onBack }) =
       console.error('Analysis error:', error)
       onAnalysisError(error.message || 'Failed to analyze ingredients')
     }
-  }
+  }, [image?.blob, extractText, analyzeIngredients, onAnalysisComplete, onAnalysisError])
 
-  const getStageInfo = () => {
+  const stageInfo = useMemo(() => {
     switch (stage) {
       case 'processing':
         return {
@@ -106,9 +106,7 @@ const LoadingScreen = ({ image, onAnalysisComplete, onAnalysisError, onBack }) =
           emoji: '⏳'
         }
     }
-  }
-
-  const stageInfo = getStageInfo()
+  }, [stage])
 
   return (
     <div className="min-h-screen bg-dark-950 flex flex-col items-center justify-center p-6">
@@ -225,6 +223,8 @@ const LoadingScreen = ({ image, onAnalysisComplete, onAnalysisError, onBack }) =
       </div>
     </div>
   )
-}
+})
+
+LoadingScreen.displayName = 'LoadingScreen'
 
 export default LoadingScreen

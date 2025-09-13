@@ -1,9 +1,9 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, memo, useCallback } from 'react'
 import { useCamera } from '../../hooks/useCamera'
 import ImageCapture from './ImageCapture'
 import CameraPermissions from './CameraPermissions'
 
-const CameraInterface = ({ onImageCapture, onBack }) => {
+const CameraInterface = memo(({ onImageCapture, onBack }) => {
   const { 
     stream, 
     isLoading, 
@@ -34,7 +34,7 @@ const CameraInterface = ({ onImageCapture, onBack }) => {
     }
   }, [stream])
 
-  const handleCapture = async () => {
+  const handleCapture = useCallback(async () => {
     if (!videoRef.current || !canvasRef.current) return
 
     setIsCapturing(true)
@@ -75,11 +75,11 @@ const CameraInterface = ({ onImageCapture, onBack }) => {
     } finally {
       setIsCapturing(false)
     }
-  }
+  }, [onImageCapture])
 
-  const handleRetry = () => {
+  const handleRetry = useCallback(() => {
     startCamera()
-  }
+  }, [startCamera])
 
   // Show permission request if needed
   if (!hasPermission) {
@@ -205,6 +205,8 @@ const CameraInterface = ({ onImageCapture, onBack }) => {
       </div>
     </div>
   )
-}
+})
+
+CameraInterface.displayName = 'CameraInterface'
 
 export default CameraInterface
