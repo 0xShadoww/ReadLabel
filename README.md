@@ -271,27 +271,9 @@ We welcome contributions! Please read our contributing guidelines:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- **Google Gemini AI** for powerful ingredient analysis
-- **Tesseract.js** for client-side OCR capabilities
-- **React Team** for the amazing framework
-- **Tailwind CSS** for the utility-first styling approach
-- **Vercel** for seamless deployment and hosting
-
-## 📞 Support
-
-- 📧 **Email**: support@readlabel.app
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/readlabel/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/readlabel/discussions)
 
 ---
 
 <div align="center">
   <p>Made with ❤️ for healthier food choices</p>
-  <p>
-    <a href="https://readlabel.app">🌐 Live Demo</a> • 
-    <a href="https://github.com/yourusername/readlabel">📱 Install PWA</a> • 
-    <a href="https://docs.readlabel.app">📚 Documentation</a>
-  </p>
 </div>
