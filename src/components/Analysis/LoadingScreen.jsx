@@ -23,7 +23,20 @@ const LoadingScreen = ({ image, onAnalysisComplete, onAnalysisError, onBack }) =
     if (image) {
       processImage()
     }
-  }, [image])
+
+    // Listen for OCR progress events
+    const handleOCRProgress = (event) => {
+      if (stage === 'ocr') {
+        const ocrProgress = event.detail.progress
+        // Map OCR progress (0-100%) to our progress range (10-50%)
+        const mappedProgress = 10 + (ocrProgress * 0.4)
+        setProgress(Math.min(50, mappedProgress))
+      }
+    }
+
+    window.addEventListener('ocrProgress', handleOCRProgress)
+    return () => window.removeEventListener('ocrProgress', handleOCRProgress)
+  }, [image, stage])
 
   const processImage = async () => {
     try {

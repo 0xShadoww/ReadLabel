@@ -20,6 +20,12 @@ class TesseractService {
           if (import.meta.env.DEV) {
             console.log('Tesseract:', m)
           }
+          // Dispatch progress events for loading screen
+          if (m.status === 'recognizing text' && m.progress) {
+            window.dispatchEvent(new CustomEvent('ocrProgress', { 
+              detail: { progress: Math.round(m.progress * 100) } 
+            }))
+          }
         }
       })
 

@@ -48,8 +48,11 @@ const CameraInterface = ({ onImageCapture, onBack }) => {
       canvas.width = video.videoWidth
       canvas.height = video.videoHeight
 
-      // Draw current video frame to canvas
-      context.drawImage(video, 0, 0, canvas.width, canvas.height)
+      // Apply horizontal flip to match the video preview
+      context.save()
+      context.scale(-1, 1)
+      context.drawImage(video, -canvas.width, 0, canvas.width, canvas.height)
+      context.restore()
 
       // Convert to blob
       canvas.toBlob(
